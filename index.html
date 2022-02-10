@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.min.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.theme.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+-->
+    <link rel="stylesheet" href="jquery-ui-1.13.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="jquery-ui-1.13.1/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jquery-ui-1.13.1/jquery-ui.theme.css">
+    <link rel="stylesheet" href="jquery-ui-1.13.1/jquery-ui.css">
+    <script src="jquery-ui-1.13.1/external/jquery/jquery.js"></script>
+    <script src="jquery-ui-1.13.1/jquery-ui.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding jQuery Website</title>
+<script>
+    // Accordion
+    $( function() {
+        $( "#accordion" ).accordion();
+    } );
+
+    // Datepicker
+    $( function() {
+        $( "#datepicker" ).datepicker();
+    } );
+
+    // Progress bar
+    $( function() {
+        $( "#progressbar" ).progressbar({
+            value: 56
+        });
+    } );
+
+    $( function() {
+        $( "#progressbar2" ).progressbar({
+            value: 65
+        });
+    } );
+
+    $( function() {
+        $( "#progressbar3" ).progressbar({
+            value: 48
+        });
+    } );
+
+
+</script>
+
+<style>
+    body {
+        font-family: sans-serif;
+        width: 100%;
+        margin: 0;
+    }
+    
+    .navbar {
+        background-color: rgb(203, 207, 218);
+        font-size: 1.1em;
+        display: flex;
+        justify-content: right;
+    }
+
+    .navbar a {
+        color: #384963;
+        padding: 20px 20px;
+        text-decoration: none;
+        font-weight: bolder;
+    }
+
+    .navbar a:hover {
+        background-color: rgb(158, 165, 184);
+    }
+
+    #banner {
+        width: 100%;
+    }
+    
+    #codeSec {
+        background-color: rgb(187, 187, 187);
+        padding: 20px;
+        margin-top: -5px;
+    }   
+
+    #codeHead {
+        text-align: center;
+        color: #384963;
+        padding-bottom: 15px;
+    } 
+
+    #accordion {
+        width: 80%;
+        margin-left: 10%;
+        padding-bottom: 30px;
+    }
+
+    /* Headers */
+    .ui-state-default,.ui-widget-content .ui-state-default,.ui-widget-header .ui-state-default,.ui-button,html .ui-button.ui-state-disabled:hover,html .ui-button.ui-state-disabled:active {
+        border:1px solid #c5c5c5;
+        background:#f6f6f6;
+        font-weight:normal;
+        color:#454545;
+    }
+
+    /* Header content */
+    .ui-state-hover,.ui-widget-content .ui-state-hover,.ui-widget-header .ui-state-hover,.ui-state-focus,.ui-widget-content .ui-state-focus,.ui-widget-header .ui-state-focus,.ui-button:hover,.ui-button:focus {
+        border:1px solid #ccc;
+        background:#ededed;
+        font-weight:normal;
+        color:#2b2b2b;
+    }
+
+    /* Focused header */
+    .ui-state-active,.ui-widget-content .ui-state-active,.ui-widget-header .ui-state-active,a.ui-button:active,.ui-button:active,.ui-button.ui-state-active:hover {
+        border:1px solid #263449;
+        background:#384963;
+        font-weight:normal;
+        color:#fff;
+    }
+
+    #enrollHead {
+        text-align: center;
+        color: #384963;
+        padding: 20px;
+    }
+
+    .diffHead {
+        color: #384963;
+        font-size: 1.4em;
+    }
+
+    .levelNames {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.3em;
+    }
+
+    #levelSec {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 50px;
+    }
+
+    #diffSec {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+    }
+
+    #dateSec {
+        width: 30%;
+        background-color: rgb(203, 207, 218);
+        border-radius: 10px;
+        padding: 20px;
+        padding-top: 0px;
+        margin-top: 15px;
+    }
+
+    #dateDesc {
+        font-size: 1.2em;
+    }
+
+    /* Footer */
+    footer p{
+        text-align: center;
+        font-size: 14px;
+        background-color: #384963;
+        color: rgb(203, 207, 218);
+        padding: 30px;
+        margin-bottom: -5px;
+    }
+</style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#">About</a>
+        <a href="#">Classes</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <img id="banner" src="images/codeBanner.png" alt="computer">
+
+    <!-- Coding info section -->
+    <div id="codeSec">
+        <!-- Heading -->
+        <h2 id="codeHead">Learn About Coding</h2>
+
+        <!-- Accordion -->
+        <div id="accordion">
+            <h3>What is coding?</h3>
+            <div>
+                <p>
+                Coding is mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+                </p>
+            </div>
+
+            <h3>Why is coding important?</h3>
+            <div>
+                <p>
+                Coding is important because sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+                suscipit faucibus urna.
+                </p>
+            </div>
+
+            <h3>What are programming languages?</h3>
+            <div>
+                <p>
+                Programming languages are nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+                lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+                </p>
+            <ul>
+                <li>Language one</li>
+                <li>Language two</li>
+                <li>Language three</li>
+            </ul>
+            </div>
+
+            <h3>What are coding careers?</h3>
+            <div>
+                <p>
+                Common coding careers are cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+                mauris vel est.
+                </p>
+                <p>
+                Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                inceptos himenaeos.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enroll section -->
+        <h2 id="enrollHead">Enroll Today</h2>
+
+        <!-- Languages section -->
+        <div id="levelSec">
+            <div id="diffSec">
+                <h3 class="diffHead">Most Used Programming Languages</h3>
+                <div class="levels">
+                    <h3 class="levelNames">HTML and CSS</h3>
+                    <div id="progressbar"></div>
+                </div>
+
+                <div class="levels">
+                    <h3 class="levelNames">JavaScript</h3>
+                    <div id="progressbar2"></div>
+                </div>
+
+                <div class="levels">
+                    <h3 class="levelNames">Python</h3>
+                    <div id="progressbar3"></div>
+                </div>
+            </div>
+            
+            <!-- Date picking section -->
+            <div id="dateSec">
+                <h3 class="diffHead">Book a class!</h3>
+                <p id="dateDesc">Select a date to attend a beginner-friendly coding class.</p>
+                <p>Date: <input type="text" id="datepicker"></p>
+            </div>
+        </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&COPY; All rights reserved 2022.</p>
+    </footer>
+</body>
+</html>
